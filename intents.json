@@ -8,10 +8,17 @@
           "How are you",
           "Is anyone there?",
           "Hello",
-          "Good day"
+          "Good day",
+          "What's up?",
+          "Namaste",
+          "Hola",
+          "you there?",
+          "Nice to see you",
+          "Pleasure meeting you"
+
         ],
         "responses": [
-          "Hey :-)",
+          "Hey, nice to hear from you",
           "Hello, thanks for visiting",
           "Hi there, what can I do for you?",
           "Hi there, how can I help?"
@@ -19,7 +26,19 @@
       },
       {
         "tag": "goodbye",
-        "patterns": ["Bye", "See you later", "Goodbye"],
+        "patterns": [
+          "Bye", 
+          "See you later", 
+          "Goodbye",
+          "I will visit again",
+          "I am leaving",
+          "Okay, I am going",
+          "We will meet again",
+          "I will come back later",
+          "Got to go",
+          "Catch you later",
+          "Have a nice day"  
+        ],
         "responses": [
           "See you later, thanks for visiting",
           "Have a nice day",
@@ -28,7 +47,18 @@
       },
       {
         "tag": "thanks",
-        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "patterns": [
+          "Thanks", 
+          "Thank you", 
+          "That's helpful", 
+          "Thank's a lot!",
+          "I appreciate your service",
+          "It was nice talking to you",
+          "You are really nice",
+          "I like your service",
+          "I like you",
+          "I love you"
+        ],
         "responses": ["Happy to help!", "Any time!", "My pleasure"]
       },
       {
@@ -36,36 +66,69 @@
         "patterns": [
           "Which items do you have?",
           "What kinds of items are there?",
-          "What do you sell?"
+          "What do you sell?",
+          "What do you offer?",
+          "What can I get",
+          "Help me with you service",
+          "What is your service?",
+          "What are you products?",
+          "What products do you sell?",
+          "What items do you have?"
         ],
         "responses": [
-          "We sell coffee and tea",
-          "We have coffee and tea"
+          "I sell homemade chocolates and ice cream",
+          "I have a sweet tooth, I sell homemade chocolates and ice cream",
+          "You deserve something sweet, homemade chocolates and ice cream",
+          "I promise to serve sweet homemade chocolates and ice cream"
         ]
       },
+      {
+        "tag": "cost",
+        "patterns": [
+          "I need an ice-cream",
+          "Buy me a chocolate",
+          "How much is the cost?",
+          "You seem expensive",
+          "I need a discount",
+          "I need an offer",
+          "Get me an ice cream",
+          "I want more ice cream",
+          "I want chocolates",
+          "What are the charges?",
+          "How do you sell?",
+          "I need more",
+          "I need better offer",
+          "Give me a deal",
+          "Be my friend",
+          "Lets be friends"
+        ],
+        "responses": [
+          "200g Homemade Chocolates for $5, and choose any ice cream cup (200g)for $2.... as I like you :-) get 10% off Promo code: SAMS-BUDDY",
+          "200g Homemade Chocolates for $5, and choose any ice cream cup (200g)for $2.... as you are so sweet :-) get 7% off Promo code: SWEET-TOOTH",
+          "200g Homemade Chocolates for $5, and choose any ice cream cup (200g)for $2.... as today is sunny :-) get 5% off on ice creams Promo code: SUNNY-DAY",
+          "200g Homemade Chocolates for $5, and choose any ice cream cup (200g)for $2.... to make you feel nice :-) get 10% off on choclates Promo code: FEEL-GOOD",
+          "200g Homemade Chocolates for $5, and choose any ice cream cup (200g)for $2.... to make you happy :-) we have Happy Hour Deal get 15% off Promo code: HAPPY-SAM"
+        ]
+      },
+
+
       {
         "tag": "payments",
         "patterns": [
           "Do you take credit cards?",
-          "Do you accept Mastercard?",
-          "Can I pay with Paypal?",
-          "Are you cash only?"
+          "Do you accept debit cards?",
+          "Can I pay with Paytm?",
+          "Are you cash only?",
+          "How can I pay?",
+          "How can I buy?",
+          "How can I get an item?",
+          "How you sell products?",
+          "How you accept payments?",
+          "How can I pay?"
         ],
         "responses": [
-          "We accept VISA, Mastercard and Paypal",
-          "We accept most major credit cards, and Paypal"
-        ]
-      },
-      {
-        "tag": "delivery",
-        "patterns": [
-          "How long does delivery take?",
-          "How long does shipping take?",
-          "When do I get my delivery?"
-        ],
-        "responses": [
-          "Delivery takes 2-4 days",
-          "Shipping takes 2-4 days"
+          "I only accept credit cards, debit cards and Paytm",
+          "You can pay with credit cards, debit cards and Paytm"
         ]
       },
       {
@@ -73,11 +136,24 @@
         "patterns": [
           "Tell me a joke!",
           "Tell me something funny!",
-          "Do you know a joke?"
+          "Do you know a joke?",
+          "I feel low",
+          "I dont feel nice",
+          "I dont like you",
+          "Tell me more jokes",
+          "Crack a joke"
         ],
         "responses": [
-          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-          "What did the buffalo say when his son left for college? Bison."
+          "This might cheer you.... Where do little ice-creams go to learn at the weekend?..... Sundae school!",
+          "This might cheer you.... Why did the ice-cream cone lose the tennis match?....... He was a soft serve!",
+          "This might cheer you.... What kind of weather is common in the land of ice-creams?...... Clouds, sprinkles, and pours!",
+          "This might cheer you.... Why did the ice-cream cone get sick?..... He spent too much time in the freezer!",
+          "This might cheer you.... Why does the ice-cream always get out of trouble?..... He is so sweet!",
+          "This might cheer you.... Where does chocolate ice-cream come from?..... Brown cows!",
+          "This might cheer you.... How do ice-creams get to work?..... The ice-cream van!",
+          "This might cheer you.... Which ice-cream flavor is always on the move?..... Man-go!",
+          "This might cheer you.... Why do ice-creams make great writers?..... They have always got the inside scoop!",
+          "This might cheer you.... Why do people like ice-cream whether it is in a carton, a cone, or a cup?..... You cannot help but love ice-cream un-cone-ditionally!"
         ]
       }
     ]
