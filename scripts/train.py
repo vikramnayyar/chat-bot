@@ -12,7 +12,7 @@ from torch.utils.data import Dataset, DataLoader
 
 from model import NeuralNet
 
-with open("intents.json", "r") as f:
+with open("data/intents.json", "r") as f:
     intents = json.load(f)
 
 all_words = []
@@ -117,7 +117,7 @@ data =  {
     "tags": tags 
     }
 
-FILE = "data.pth"
+FILE = "model/data.pth"
 torch.save(data, FILE)
 
 print(f"Training is complete. Model {FILE} was saved successfully.")
