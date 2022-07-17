@@ -25,21 +25,19 @@ for intent in intents["intents"]:
     for pattern in intent["patterns"]:
         w = tokenize(pattern)
         all_words.extend(w)
-        xy.append((w, tag))
+        xy.append((w, tag))             # xy contains [(pattern1, tag1), (pattern2, tag2), .... ]
 
 ignore_words = ['?', "!", ".", ","]
 
-all_words = [stem(w) for w in all_words if w not in ignore_words]
-
+all_words = [stem(w) for w in all_words if w not in ignore_words]   # all_words contains pre-processed patterns in one matrix
 
 all_words = sorted(set(all_words))   # set() removes duplicates
-tags = sorted(set(tags))
-# print(all_words)
+tags = sorted(set(tags))             # tags contains all tags
 
 X_train = []
 y_train = []
 for (pattern_sentence, tag) in xy:
-    bag = bag_of_words(pattern_sentence, all_words)
+    bag = bag_of_words(pattern_sentence, all_words)         # converting patterns to bag of words (vectors)
     # print(bag)
     X_train.append(bag)
 
@@ -51,7 +49,7 @@ X_train = np.array(X_train)
 y_train = np.array(y_train)
 
      
-class ChatDataset(Dataset):
+class ChatDataset(Dataset):                     # creating pytorch dataset
     def __init__(self):
             self.n_samples = len(X_train)
             self.x_data = X_train
@@ -123,11 +121,3 @@ FILE = "data.pth"
 torch.save(data, FILE)
 
 print(f"Training is complete. Model {FILE} was saved successfully.")
-
-
-
-
-
-
-
-
